@@ -1,7 +1,7 @@
 # MIN HON (من هون)
 
 **AI-enabled Palestinian heritage e-commerce prototype**  
-**2nd Place — AI Track, Innovate IT Hackathon**
+**2nd Place in the AI Track, Innovate IT Hackathon**
 
 [Live Demo](https://minhon.vercel.app) · Team project developed at An-Najah National University
 
@@ -53,8 +53,8 @@ No API keys or credentials are stored in this repository. Runtime credentials ar
 
 MIN HON was built as a **team hackathon project**. This repository is published from the team's shared project source for portfolio and learning purposes; it is not presented as a solo project.
 
-- **Yousef AbuBaker** — Technical Team Leader
-- **Qusay Al Taslaq** — Team collaborator · [GitHub](https://github.com/QusayAlTaslaq)
+- **Yousef AbuBaker:** Technical Team Leader
+- **Qusay Al Taslaq:** Team collaborator · [GitHub](https://github.com/QusayAlTaslaq)
 
 ## Source Note
 
