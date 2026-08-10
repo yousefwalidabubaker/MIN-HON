@@ -49,6 +49,18 @@ The concierge connects the storefront to a server-side chat endpoint. It is grou
 
 No API keys or credentials are stored in this repository. Runtime credentials are expected through environment variables.
 
+## What I learned
+
+* Clear feature priorities help turn a broad product concept into a working prototype.
+* Server side AI requests protect credentials and provide one place to control prompts and responses.
+* Shared schemas keep the storefront and API aligned on data structure.
+
+## Possible next steps
+
+* Add authenticated customer accounts and persistent carts.
+* Evaluate concierge answers against a fixed set of product questions.
+* Add automated tests for customization, cart behavior, and API validation.
+
 ## Team & Attribution
 
 MIN HON was built as a **team hackathon project**. This repository is published from the team's shared project source for portfolio and learning purposes; it is not presented as a solo project.
