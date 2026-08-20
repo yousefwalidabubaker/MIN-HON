@@ -7,7 +7,7 @@
 
 MIN HON ("From Here") is a bilingual e-commerce experience built around Palestinian heritage products. The prototype combines a modern storefront with product customization, cart interactions, and an AI concierge that helps users discover products and learn about the story behind them.
 
-## Engineering highlights
+## Software Engineering Highlights
 
 - Responsive React + TypeScript storefront
 - Product customization flow for designs and Arabic/English text
@@ -54,7 +54,7 @@ Keeping the AI request on the server avoids exposing API credentials in the brow
 
 No API keys or credentials are stored in this repository. Runtime credentials are expected through environment variables.
 
-## Engineering lessons
+## Software Engineering Lessons
 
 - Shared schemas reduce drift between frontend requests and backend expectations.
 - Server-side AI calls protect credentials and centralize integration logic.
@@ -62,7 +62,7 @@ No API keys or credentials are stored in this repository. Runtime credentials ar
 - Full user flows should be tested across integration points, not only as isolated screens.
 - A working prototype is stronger when the code structure makes the next iteration easier instead of harder.
 
-## Possible next steps
+## Possible Next Steps
 
 - Add authenticated customer accounts and persistent carts.
 - Add automated tests for customization, cart behavior, API validation, and AI endpoint failures.
