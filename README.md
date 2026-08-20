@@ -7,18 +7,21 @@
 
 MIN HON ("From Here") is a bilingual e-commerce experience built around Palestinian heritage products. The prototype combines a modern storefront with product customization, cart interactions, and an AI concierge that helps users discover products and learn about the story behind them.
 
-## Highlights
+## Engineering highlights
 
-- Bilingual Palestinian heritage storefront with product collections and detail pages
-- Guided product-customization flow for designs and Arabic/English text
-- AI shopping concierge with product-aware recommendations
-- Cart and recently viewed interactions for a complete prototype journey
-- Responsive React interface backed by a TypeScript/Express API
+- Responsive React + TypeScript storefront
+- Product customization flow for designs and Arabic/English text
+- AI shopping concierge connected through a server-side API endpoint
+- Cart and recently viewed state for a complete prototype journey
+- Express + TypeScript backend with shared validation schemas
 - Structured pnpm monorepo with shared API, database, and integration packages
+- Server-side credential handling for external AI requests
 
 ## My Role
 
-I served as **Technical Team Leader** for MIN HON. I coordinated the technical delivery with the wider project team, helped translate the product concept into implementable features, aligned the shopping, customization, and AI-assistant experiences, and supported the final product presentation.
+I served as **Technical Team Leader** for MIN HON. I coordinated technical delivery across the project, helped break the concept into implementable features, aligned the storefront, customization, and AI-assistant flows, and supported integration decisions between the frontend and backend work.
+
+The project was built collaboratively during the hackathon, so this repository documents the system and the technical work without presenting the team project as a solo build.
 
 MIN HON placed **2nd in the AI Track at the Innovate IT Hackathon** and was later selected for support by **Arab Student Aid International**.
 
@@ -47,19 +50,26 @@ lib/
 
 The concierge connects the storefront to a server-side chat endpoint. It is grounded in MIN HON's product catalogue and can answer questions about products, customization, sizing, care, and Palestinian design context while returning product IDs that the UI renders as recommendations.
 
+Keeping the AI request on the server avoids exposing API credentials in the browser and gives the backend one place to control prompts, validation, and response handling.
+
 No API keys or credentials are stored in this repository. Runtime credentials are expected through environment variables.
 
-## What I learned
+## Engineering lessons
 
-* Clear feature priorities help turn a broad product concept into a working prototype.
-* Server side AI requests protect credentials and provide one place to control prompts and responses.
-* Shared schemas keep the storefront and API aligned on data structure.
+- Shared schemas reduce drift between frontend requests and backend expectations.
+- Server-side AI calls protect credentials and centralize integration logic.
+- Clear module boundaries matter even more when a team is building under hackathon time pressure.
+- Full user flows should be tested across integration points, not only as isolated screens.
+- A working prototype is stronger when the code structure makes the next iteration easier instead of harder.
 
 ## Possible next steps
 
-* Add authenticated customer accounts and persistent carts.
-* Evaluate concierge answers against a fixed set of product questions.
-* Add automated tests for customization, cart behavior, and API validation.
+- Add authenticated customer accounts and persistent carts.
+- Add automated tests for customization, cart behavior, API validation, and AI endpoint failures.
+- Add CI checks for type errors and tests before deployment.
+- Improve error handling and loading states across API-dependent flows.
+- Evaluate concierge answers against a fixed set of product questions.
+- Add database persistence for production-like user and inventory flows.
 
 ## Team & Attribution
 
