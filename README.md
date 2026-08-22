@@ -3,7 +3,7 @@
 **AI-enabled Palestinian heritage e-commerce prototype**  
 **2nd Place in the AI Track, Innovate IT Hackathon**
 
-[Live Demo](https://minhon.vercel.app) · Team project developed at An-Najah National University
+Team project developed at An-Najah National University
 
 MIN HON ("From Here") is a bilingual e-commerce experience built around Palestinian heritage products. The prototype combines a modern storefront with product customization, cart interactions, and an AI concierge that helps users discover products and learn about the story behind them.
 
@@ -29,7 +29,7 @@ MIN HON placed **2nd in the AI Track at the Innovate IT Hackathon** and was late
 
 **Frontend:** React, TypeScript, Vite, Tailwind CSS, Radix UI, TanStack React Query, Wouter  
 **Backend:** Node.js, Express, TypeScript, OpenAI API integration  
-**Data & validation:** Drizzle ORM, Zod  
+**Data and validation:** Drizzle ORM, Zod  
 **Tooling:** pnpm workspaces, TypeScript, Pino
 
 ## Architecture
@@ -44,6 +44,17 @@ lib/
 ├── api-zod/          # API schemas and generated types
 ├── db/               # Drizzle database layer
 └── integrations-*    # AI integration packages
+```
+
+## Build Locally
+
+Requirements: Node.js and pnpm.
+
+```bash
+git clone https://github.com/yousefwalidabubaker/MIN-HON.git
+cd MIN-HON
+pnpm install
+pnpm build
 ```
 
 ## AI Concierge
@@ -71,13 +82,13 @@ No API keys or credentials are stored in this repository. Runtime credentials ar
 - Evaluate concierge answers against a fixed set of product questions.
 - Add database persistence for production-like user and inventory flows.
 
-## Team & Attribution
+## Team and Attribution
 
-MIN HON was built as a **team hackathon project**. This repository is published from the team's shared project source for portfolio and learning purposes; it is not presented as a solo project.
+MIN HON was built as a **team hackathon project**. This repository is published from the team's shared project source for portfolio and learning purposes. It is not presented as a solo project.
 
 - **Yousef AbuBaker:** Technical Team Leader
-- **Qusay Al Taslaq:** Team collaborator · [GitHub](https://github.com/QusayAlTaslaq)
+- **Qusay Al Taslaq:** Team collaborator, [GitHub](https://github.com/QusayAlTaslaq)
 
 ## Source Note
 
-The original hosted hackathon demo used a separate media-asset bundle that was not included in the team's public source archive. The application source and architecture are preserved here; the live demo above reflects the complete presentation version.
+The original hosted hackathon demo used a separate media asset bundle that was not included in the team's public source archive. The application source and architecture are preserved in this repository.
